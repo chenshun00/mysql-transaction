@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="localCacheScope" value="STATEMENT"/>
+    </settings>
+
+    <typeAliases>
+        <!--bean-->
+        <typeAlias alias="TestTransaction" type="top.huzhurong.mysql.transaction.bean.TestTransaction"/>
+        <!--query-->
+        <typeAlias alias="TestTransactionQuery" type="top.huzhurong.mysql.transaction.bean.query.TestTransactionQuery"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="mapper/test_transaction.xml"/>
+    </mappers>
+</configuration>
